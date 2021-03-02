@@ -1,0 +1,181 @@
+#navbara {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 999;
+    background-color: transparent;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#navbara {
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.navbar {
+    background-color: #ffffff;
+}
+
+#navbara a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+
+/* Page content */
+
+.content {
+    padding: 16px;
+}
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 2px 28px 0 rgb(0 0 0 / 6%);
+    background-color: #ffffff !important;
+    -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+
+.sticky+.content {
+    padding-top: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: none;
+    font-weight: 500;
+    color: #8e24aa;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-image {
+    position: relative;
+    top: 4px;
+    left: 140px;
+}
+
+.circle {
+    position: absolute;
+    top: -380px;
+    right: -220px;
+    z-index: -1;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 840px;
+    position: relative;
+    top: 30px;
+    right: 135px;
+    height: 34px;
+    font: normal normal normal 25px/34px 'Open Sans';
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
+}
+
+.navbar-links {
+    position: relative;
+    top: -6px;
+    right: 20px;
+    width: 100%;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-button {
+    position: relative;
+    top: -7px;
+    right: 25px;
+    box-shadow: 0px 0px 0px #663399;
+    border: 3px solid #663399;
+    border-radius: 24px;
+    opacity: 1;
+    width: 85%;
+    height: 35px;
+    color: #663399;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    position: relative;
+    top: -7px;
+    right: 25px;
+    box-shadow: 0px 0px 0px #663399;
+    border: 3px solid #663399;
+    border-radius: 24px;
+    opacity: 1;
+    width: 85%;
+    height: 35px;
+    background-color: #663399;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+
+.signup-button {
+    position: relative;
+    top: -7px;
+    right: -5px;
+    background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+    border: 2px solid #663399;
+    box-shadow: 0px #663399;
+    border-radius: 24px;
+    opacity: 1;
+    width: 130%;
+    height: 35px;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.signup-button:hover {
+    background: #58159b;
+    border: 2px solid #58159b;
+    color: white;
+}

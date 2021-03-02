@@ -1,0 +1,68 @@
+<section>
+    <div class="container">
+        <div style="width: 400px;">
+            <p class="banner-heading">We make it Super Simple</p>
+            <img class="blob" src="assets/blob-small.svg">
+            <div class="divider"></div>
+            <img class="banner-image" src="assets/collect_img-video.png">
+            <div class="dots"></div>
+        </div>
+        <div>
+
+            <div class="eligiblity-calc">
+                <div class="card1">
+                    <div>
+                        <h2>Eligibilty Calculator</h2>
+                    </div>
+
+                    <p class="sub-text">Monthly Income</p>
+                    <div class="slidecontainer">
+                        <p class="sub-text"><span id="demo">₹ {{incomeRange}}</span></p>
+                        <input type="range" [(ngModel)]="incomeRange" min={{minValue}} max={{maxValue}} class="slider">
+                        <div class="min-max-slider">
+                            <p>₹ {{minValue}}</p>
+                            <p>₹ {{maxValue}}</p>
+                        </div>
+                    </div>
+
+                    <p class="sub-text">Monthly Expense</p>
+                    <div class="slidecontainer">
+                        <p class="sub-text"><span id="demo">₹ {{expenseRange}}</span></p>
+                        <input type="range" [(ngModel)]="expenseRange" min={{minValue}} max={{maxValue}} class="slider">
+                    </div>
+
+                    <p class="sub-text">Repayment Tenure</p>
+                    <select class="repaymenttenure">
+                        <option value="6 Months">6 Months</option>
+                    </select>
+
+
+                    <div>
+                        <div class="toggle">
+                            <p style="margin-top: 8px;">Do you have any existing loans?</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider_switch round"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <p class="sub-text">EMI of Existing Loan(optional)</p>
+                    <input class="loan" type="text" name="loan" placeholder="₹ 15,000">
+
+                </div>
+
+                <div class="card2">
+                    <p class="loan_amount">Loan Amount</p>
+                    <p class="loan-money">₹ 1,00,000</p>
+
+                    <p class="emi">Your EMI will be</p>
+                    <p class="loan-money">₹ 15,000</p>
+
+                    <button class="getmoney">GET MONEY</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
